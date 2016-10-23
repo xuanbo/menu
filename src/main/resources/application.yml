@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    schema: database/import.sql
+    sql-script-encoding: utf-8
+    name: mydb
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/menu
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    minIdle: 1
+    maxActive: 2
+    initialSize: 1
+    timeBetweenEvictionRunsMillis: 3000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 'ZTM' FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+
+mybatis:
+  mapperLocations: mapper/*.xml
+  typeAliasesPackage: xinQing.web.menu.entity
