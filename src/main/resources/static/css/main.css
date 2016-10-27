@@ -1,0 +1,39 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#header {
+    height: 80px;
+    background-color: #ccc;
+}
+
+#main {
+}
+
+#main_left {
+
+}
+
+#main_left .category {
+    height: 30px;
+    text-align: center;
+}
+
+#menu {
+}
+
+ul li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#menu ul li {
+    height: 30px;
+    text-align: center;
+}
+
+#main_right {
+
+}
